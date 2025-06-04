@@ -39,10 +39,15 @@ public class SecurityConfig {
             return userRepository.findByUsername(username)
                     .map(user -> {
                         String role = user.getUsername().equals("admin") ? "ADMIN" : "USER";
-                        System.out.println("User found: " + user.getUsername() + ", Role: " + role);
+                        String password = user.getPassword();
+                        if (password == null) {
+                            System.out.println("Password is null for user: " + username);
+                            throw new UsernameNotFoundException("Invalid credentials for user: " + username);
+                        }
+                        System.out.println("User found: " + user.getUsername() + ", Role: " + role + ", Password: [PROTECTED]");
                         return org.springframework.security.core.userdetails.User
                                 .withUsername(user.getUsername())
-                                .password(user.getPassword()) // Use hashed password from DB
+                                .password(password)
                                 .roles(role)
                                 .build();
                     })

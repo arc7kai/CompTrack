@@ -36,18 +36,19 @@ public class SecurityConfig {
     @Bean
     public UserDetailsService userDetailsService() {
         return username -> {
-            System.out.println("Attempting to authenticate user: " + username);
+            System.out.println("Authenticating user: " + username);
             return userRepository.findByUsername(username)
                     .map(user -> {
-                        System.out.println("User found: " + user.getUsername() + ", Role: " + (user.getUsername().equals("admin") ? "ADMIN" : "USER"));
+                        String role = user.getUsername().equals("admin") ? "ADMIN" : "USER";
+                        System.out.println("User found: " + user.getUsername() + ", Role: " + role);
                         return org.springframework.security.core.userdetails.User
                                 .withUsername(user.getUsername())
                                 .password("{noop}password")
-                                .roles(user.getUsername().equals("admin") ? "ADMIN" : "USER")
+                                .roles(role)
                                 .build();
                     })
                     .orElseThrow(() -> {
-                        System.out.println("Authentication failed: User not found: " + username);
+                        System.out.println("User not found: " + username);
                         return new UsernameNotFoundException("User not found: " + username);
                     });
         };

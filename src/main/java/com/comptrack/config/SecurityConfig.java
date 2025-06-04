@@ -1,6 +1,5 @@
 package com.comptrack.config;
 
-import com.comptrack.model.User;
 import com.comptrack.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -43,7 +42,7 @@ public class SecurityConfig {
                         System.out.println("User found: " + user.getUsername() + ", Role: " + role);
                         return org.springframework.security.core.userdetails.User
                                 .withUsername(user.getUsername())
-                                .password("{noop}password")
+                                .password(user.getPassword()) // Use hashed password from DB
                                 .roles(role)
                                 .build();
                     })

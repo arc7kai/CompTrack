@@ -6,6 +6,7 @@ import com.comptrack.exception.ValidationException;
 import com.comptrack.model.User;
 import com.comptrack.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,8 +18,10 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private BCryptPasswordEncoder passwordEncoder;
+
     public UserDTO createUser(UserDTO userDTO) {
-        // Check if username or email already exists
         if (userRepository.findByUsername(userDTO.getUsername()).isPresent()) {
             throw new ValidationException("Username already exists");
         }
@@ -29,6 +32,7 @@ public class UserService {
         User user = new User();
         user.setUsername(userDTO.getUsername());
         user.setEmail(userDTO.getEmail());
+        user.setPassword(passwordEncoder.encode(userDTO.getPassword())); // Hash password
 
         User savedUser = userRepository.save(user);
 

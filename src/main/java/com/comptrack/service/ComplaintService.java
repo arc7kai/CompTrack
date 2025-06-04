@@ -26,7 +26,8 @@ public class ComplaintService {
         Complaint complaint = new Complaint();
         complaint.setTitle(complaintDTO.getTitle());
         complaint.setDescription(complaintDTO.getDescription());
-        complaint.setStatus(complaintDTO.getStatus() != null ? complaintDTO.getStatus() : Status.valueOf("OPEN"));
+        // Set status as String, validate if not null
+        complaint.setStatus(complaintDTO.getStatus() != null ? complaintDTO.getStatus() : Status.OPEN.name());
 
         Optional<User> user = userRepository.findById(complaintDTO.getUserId());
         if (user.isPresent()) {

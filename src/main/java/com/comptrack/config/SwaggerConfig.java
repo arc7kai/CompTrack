@@ -19,7 +19,7 @@ public class SwaggerConfig {
                                 new SecurityScheme()
                                         .type(SecurityScheme.Type.HTTP)
                                         .scheme("basic")
-                                        .name("basicAuth")
-                                        .in(SecurityScheme.In.HEADER)));
+                                        .in(SecurityScheme.In.HEADER)
+                                        .name("Authorization")));
     }
 }

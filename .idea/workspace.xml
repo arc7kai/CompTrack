@@ -4,7 +4,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="764246e0-20cd-4f08-89b6-3948191334f1" name="Changes" comment="" />
+    <list default="true" id="764246e0-20cd-4f08-89b6-3948191334f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENCE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENCE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xm" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/CompTrackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/CompTrackApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/controller/ComplaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/controller/ComplaintController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/dto/ComplaintDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/dto/ComplaintDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/exception/ComplaintNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/exception/ComplaintNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/exception/UnauthorizedAccessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/exception/UnauthorizedAccessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/exception/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/exception/UserNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/exception/ValidationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/exception/ValidationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/model/Complaint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/model/Complaint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/model/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/model/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/service/ComplaintService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/service/ComplaintService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comptrack/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comptrack/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/CompTrackApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/CompTrackApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/config/CorsConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/config/CorsConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/config/CorsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/config/SwaggerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/controller/ComplaintController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/controller/ComplaintController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/dto/ComplaintDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/dto/ComplaintDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/exception/ComplaintNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/exception/ComplaintNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/exception/UnauthorizedAccessException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/exception/UnauthorizedAccessException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/exception/UserNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/exception/UserNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/exception/ValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/exception/ValidationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/model/Complaint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/model/Complaint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/model/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/model/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/repository/ComplaintRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/repository/ComplaintRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/service/ComplaintService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/service/ComplaintService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/comptrack/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/comptrack/service/UserService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +62,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;arc7kai&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/arc7kai/CompTrack.git&quot;,
+    &quot;accountId&quot;: &quot;dec98c00-dd3f-48ed-8325-adbf2a913a1d&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -41,6 +101,8 @@
     &quot;Application.CompTrackApplication.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [-N,wrapper:wrapper].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ IDEA/CompTrack_project&quot;
   }

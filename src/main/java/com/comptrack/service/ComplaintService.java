@@ -26,14 +26,15 @@ public class ComplaintService {
         Complaint complaint = new Complaint();
         complaint.setTitle(complaintDTO.getTitle());
         complaint.setDescription(complaintDTO.getDescription());
-        // Set status as String, validate if not null
-        complaint.setStatus(complaintDTO.getStatus() != null ? complaintDTO.getStatus() : Status.OPEN.name());
+        complaint.setStatus(
+                complaintDTO.getStatus() != null ? complaintDTO.getStatus().name() : Status.OPEN.name()
+        );
 
         Optional<User> user = userRepository.findById(complaintDTO.getUserId());
         if (user.isPresent()) {
             complaint.setUser(user.get());
         } else {
-            throw new RuntimeException("User not found");
+            throw new RuntimeException("User not found with ID: " + complaintDTO.getUserId());
         }
 
         Complaint savedComplaint = complaintRepository.save(complaint);
@@ -49,7 +50,7 @@ public class ComplaintService {
     public ComplaintDTO getComplaintById(Long id) {
         Optional<Complaint> complaint = complaintRepository.findById(id);
         return complaint.map(this::mapToDTO)
-                .orElseThrow(() -> new RuntimeException("Complaint not found"));
+                .orElseThrow(() -> new RuntimeException("Complaint not found with ID: " + id));
     }
 
     public ComplaintDTO updateComplaint(Long id, ComplaintDTO complaintDTO) {
@@ -58,11 +59,14 @@ public class ComplaintService {
             Complaint complaint = existingComplaint.get();
             complaint.setTitle(complaintDTO.getTitle());
             complaint.setDescription(complaintDTO.getDescription());
-            complaint.setStatus(complaintDTO.getStatus());
+            complaint.setStatus(
+                    complaintDTO.getStatus() != null ? complaintDTO.getStatus().name() : complaint.getStatus()
+            );
+
             Complaint updatedComplaint = complaintRepository.save(complaint);
             return mapToDTO(updatedComplaint);
         } else {
-            throw new RuntimeException("Complaint not found");
+            throw new RuntimeException("Complaint not found with ID: " + id);
         }
     }
 
@@ -70,7 +74,7 @@ public class ComplaintService {
         if (complaintRepository.existsById(id)) {
             complaintRepository.deleteById(id);
         } else {
-            throw new RuntimeException("Complaint not found");
+            throw new RuntimeException("Complaint not found with ID: " + id);
         }
     }
 
@@ -79,9 +83,13 @@ public class ComplaintService {
         dto.setId(complaint.getId());
         dto.setTitle(complaint.getTitle());
         dto.setDescription(complaint.getDescription());
-        dto.setStatus(complaint.getStatus());
+        dto.setStatus(
+                complaint.getStatus() != null ? Status.valueOf(complaint.getStatus()) : null
+        );
         dto.setCreatedAt(complaint.getCreatedAt());
-        dto.setUserId(complaint.getUser() != null ? complaint.getUser().getId() : null);
+        dto.setUserId(
+                complaint.getUser() != null ? complaint.getUser().getId() : null
+        );
         return dto;
     }
 }
